@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <script src="https://apis.google.com/js/platform.js" async defer></script> -->
+  <meta name="google-signin-client_id" 
+    content="277985285628-62t1866vegi4tcmo8rr4q33592nj2nu7.apps.googleusercontent.com">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  
+  <script src="https://kit.fontawesome.com/bc269784d3.js" crossorigin="anonymous"></script>
+  <!--<link rel="stylesheet" href="menu.css">-->
+  <title>hashez page</title>
+  <style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: linear-gradient(to right, rgba(200, 8,207, 0.75), rgba(28, 70, 184, 0.8)), url(https://www.hmablogs.com/wp-content/uploads/2022/06/background-1-scaled.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+  }
+  nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 5%;
+  }
+  nav .logo{
+    font-size: 30px;
+    font-weight: 700;
+  }
+  nav ul{
+    display: flex;
+    list-style: none;
+  }
+  nav ul li{
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  nav .navLinks button{
+    padding: 2px 20px;
+    border-radius: 10px;
+    color: blue;
+    font-size: 16px;
+    border-style: none;
+    font-weight: 700;
+    margin-left: 10px;
+  }
+  nav ul li:hover{
+    background-color: rgb(44, 1, 197);
+  }
+  nav .menubtn{
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
+  }
+   
+  /* responsive navbar css */
+  @media screen and (max-width: 600px) {
+    nav .menubtn{
+      display: flex;
+    }
+    nav .navLinks{
+      display: none;
+    }
+    .sideNav {
+      display: block !important;
+    }
+  }
+   
+  .sideNav{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    background-color: rgb(44, 1, 197);
+    overflow-x: hidden;
+    transition: 0.3s ease-in;
+    padding-top: 60px;
+    display: none;
+  }
+   
+  .sideNav a{
+    padding: 8px 8px 8px 40px;
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    color: #d1d1d1;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  .sideNav a button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: blue;
+    font-size: 16px;
+    border-style: none;
+    font-weight: 700;
+  }
+  .sideNav a:hover{
+    color: white;
+  }
+  .sideNav .closeBtn{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+  }
+   
+  .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 5%;
+  }
+  .row .column1 {
+    padding-right: 50px;
+  }
+  .column1 h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+  .column1 p {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .column1 button {
+    width: 150px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border-style: none;
+    color: blue;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  /* Header content responsive */
+  @media screen and (max-width: 980px) {
+    .column2 img {
+      width: 350px;
+    }
+    .column1 h1 {
+      font-size: 40px;
+    }
+    .column1 p{
+      font-size: 17px;
+    }
+    .row {
+      margin-top: 80px;
+    }
+  }
+   
+  @media screen and (max-width: 600px) {
+   
+    .column1 h1 {
+      font-size: 35px;
+    }
+    .row {
+      flex-direction: column;
+   
+    }
+    .row .column1 {
+      padding: 30px;
+    }
+  }
+  </style>
+</head>
+<body>
+ 
+   <div class="row">
+     <div class="column1">
+       <h1>HASHEZ</h1>
+       <p>A TWO-DAY ONLINE WORKSHOP BY INDUSTRY EXPERTS<br>
+          With hands-on training on DL UNIFY
+         </p>
+      
+       <!--<div class="g-signin2" data-onsuccess="onSignIn"></div>-->
+       <button type="button" class="btn  btn-danger mx-1">
+        <a class="no-hover" href="/google"><i class="fab fa-google"></i> Google</a>
+    </button>
+    <!-- <a href="#" onclick="signOut();">Sign out</a>  -->
+
+    <!-- <script>
+        function onSignIn(googleUser) {
+            var id_token = googleUser.getAuthResponse().id_token;
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/login');
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onload = function() {
+            console.log('Signed in as: ' + xhr.responseText);
+            if(xhr.responseText =='success'){
+                signOut();
+                location.assign('/dashboard')
+            }
+            };
+            xhr.send(JSON.stringify({token: id_token}));
+        }
+    </script> -->
+
+
+    <!-- <script>
+        function signOut() {
+          var auth2 = gapi.auth2.getAuthInstance();
+          auth2.signOut().then(function () {
+          console.log('User signed out.');
+          });
+        }
+    </script> -->
+     </div>
+     <div class="column2">
+       <img src="https://www.hmablogs.com/wp-content/uploads/2022/06/banner-img.png" alt="banner" width="500px">
+     </div>
+   </div>
+   
+   <!-- javascript to make side menu appear -->
+ <script>
+   function openNav() {
+     document.getElementById("sidenav").style.width = "50%";
+   }
+   function closeNav() {
+     document.getElementById("sidenav").style.width = "0%";
+   }
+ </script>
+ 
+</body>
+</html>
