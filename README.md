@@ -1,4 +1,4 @@
-## Google-Authentication-System
+## GoogleGuardian
 
 ## Getting Started
 ### Prerequisites
@@ -7,12 +7,12 @@
 ### How to run
 1. Clone the repository
 ```bash
-git clone https://github.com/simran1002/Google-Authentication-System.git
+git clone https://github.com/simran1002/GoogleGuardian.git
 ```
 
 2. Open the project directory
 ```bash
-cd Google-Authentication-System
+cd GoogleGuardian
 ```
 
 3. Install dependencies
