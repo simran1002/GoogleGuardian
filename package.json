@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/simran1002/Google-Authentication.git"
+    "url": "git+https://github.com/simran1002/GoogleGuardian.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/simran1002/Google-Authentication/issues"
+    "url": "https://github.com/simran1002/GoogleGuardian/issues"
   },
-  "homepage": "https://github.com/simran1002/Google-Authentication#readme",
+  "homepage": "https://github.com/simran1002/GoogleGuardian#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "cookie-parser": "^1.4.6",
@@ -36,7 +36,7 @@
     "mongodb": "^6.3.0",
     "mongoose": "^6.7.4",
     "nodemailer": "^6.8.0",
-    "nodemon": "^2.0.20",
+    "nodemon": "^2.0.22",
     "passport": "^0.6.0",
     "passport-google-oauth2": "^0.2.0",
     "passport-oauth2": "^1.6.1",

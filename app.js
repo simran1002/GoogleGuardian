@@ -94,7 +94,7 @@ async function sendEmail(toAddress) {
         user: process.env.USER_MAIL,
         clientId: process.env.GOOGLE_CLIENT_ID,
         clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-        accessToken: AUTH_ACCESS_TOKEN
+        accessToken: process.env.AUTH_ACCESS_TOKEN
       },
     });
  
