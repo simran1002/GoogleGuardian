@@ -213,9 +213,9 @@ app.post("/payment", async (req,res) => {
           payment_id:paymentID,
         });
 
-        return res.status(200).json({ message: "Payment verified successfully" });
+        return res.status(200).json({ message: "Payment is Verified successfully" });
       } else {
-        return res.status(400).json({ message: "Invalid signature sent!" });
+        return res.status(400).json({ message: "Invalid Signature sent!" });
       }
     } catch (error) {
       res.status(500).json({ message: "Internal Server Error!" });
