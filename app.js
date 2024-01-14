@@ -146,7 +146,7 @@ app.post("/add/registered/user",async (req,res,next)=>{
       res.redirect("/success");
     }
     else{
-      console.log("User Already Exists")
+      console.log("User details Already Exists")
       const token= await userExist.generateAuthtoken();
       res.cookie("email",token);
       res.redirect("/payment");
