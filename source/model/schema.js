@@ -11,7 +11,7 @@ const studentSchema = new mongoose.Schema({
         required: true,
         unique:true
     },
-    profileurl:  {
+    profile_url:  {
         type:String,
         required: true
     },
